@@ -81,7 +81,7 @@
 #define LOG_UPTO(pri)  ((1 << ((pri)+1)) - 1)	/* all priorities through pri */
 
 class Syslog {
-  private:
+  protected:
     UDP* _client;
     uint8_t _protocol;
     IPAddress _ip;
