@@ -15,5 +15,6 @@
     "atmelsam",
     "espressif8266",
     "espressif32"
-  ] 
+  ],
+  "headers" : [ "Syslog.h", "SyslogThreadSafe.h"] 
 }

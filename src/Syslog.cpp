@@ -228,9 +228,7 @@ inline bool Syslog::_sendLog(uint16_t pri, const char *message) {
     this->_client->print(F("[0]: "));
   }
   this->_client->print(message);
-  this->_client->endPacket();
-
-  return true;
+  return this->_client->endPacket();
 }
 
 inline bool Syslog::_sendLog(uint16_t pri, const __FlashStringHelper *message) {
@@ -274,8 +272,5 @@ inline bool Syslog::_sendLog(uint16_t pri, const __FlashStringHelper *message) {
     this->_client->print(F("[0]: "));
   }
   this->_client->print(message);
-  this->_client->endPacket();
-
-
-  return true;
+  return this->_client->endPacket();
 }
